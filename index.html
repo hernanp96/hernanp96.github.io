@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Hernán Perez - Currículum</title>
+</head>
+
+<body>
+  <section class="fondodegrade" id="header" style="padding-top: 2%">
+    <h1 id="hernan">HERNÁN PEREZ</h1>
+    <h2 id="cv">CURRÍCULUM</h2>
+  </section>
+
+  <img class="foto" src="../CV Final/img/FotoCVRecorte.png" alt="">
+  <p></p>
+
+<div class="datapersonal">
+<ul>
+    <button class="btninfopersonal fondoboton" id="btnmail" onclick="mail()">Mail</button>
+    <button class="btninfopersonal" id="btnaddress" onclick="direccion()">Dirección</button>
+    <button class="btninfopersonal" id="btnbirth" onclick="cumpleanos()" style="letter-spacing: 4px;">Fecha de nacimiento</button>
+    <button class="btninfopersonal" id="btntel" onclick="tel()">Teléfono</button>
+    <p class="fondodegrade"id="datosdisplay">hernan96perez@gmail.com</p>
+</ul>
+
+</div>
+<p></p>
+<div id="about">
+    <p class="fondodegrade" id="abouttitulo"><b>Sobre Mi</b></p>
+    <p class="resumen"><b>Desde muy joven siempre me involucré en trabajos vinculados a la informática y la tecnología, apasionado por estos temas siempre busco nuevas oportunidades para explorar nuevos desafíos y conocimientos. Me especializo en trabajos de infraestructura y administración informática, aunque actualmente estoy incursionando en el diseño web y la programación para expandir mis campos de acción.</b></p>
+</div>
+<p></p>
+<p></p>
+<p></p>
+  <div id = "container">
+    <div id = "first" style="margin-left: 20%;" style="margin-right:0%">
+      <div class = "grid-container" id="botonesizq">
+        <div class="grid-item"><button type = "button" id = "b1" class = "small_btn fondoboton" onclick="boton1()">Experiencia laboral</button></div>
+        <div class="grid-item"><button type = "button" id = "b2" class = "small_btn" onclick="boton2()">Estudios</button></div>
+        <div class="grid-item"><button type = "button" id = "b3" class = "small_btn" style="letter-spacing: 4px;" onclick="boton3()">Herramientas y conocimientos</button></div>
+        <div class="grid-item"><button type = "button" id = "b4" class = "small_btn" onclick="boton4()">Otros trabajos</button></div>
+      </div>
+    </div>
+    <div id = "second" style="margin-left:0%" style="margin-right:20%">
+
+      <div class="scroll-bar" id="menu-content">
+      <div class="col" id="infotrabajos">
+        <div class="col" id="infopioix">
+          <div class="titulos">
+          <p>SOPORTE TÉCNICO INFORMÁTICO Y MULTIMEDIA</p>
+          <p>Institución Salesiana Pio IX</p>
+          <p>04.2014 - 07.2017</p>
+          <p>Buenos Aires, Argentina</p>
+          </div>
+          <div class="descripcion">
+            <li>Armado, reparación y mantenimiento de equipos informáticos y multimedia (impresoras, proyectores, routers, parlantes, etc)</li>
+            <li>Atención al usuario vía teléfono, presencial o correo electrónico</li>
+            <li>Cableado estructurado de red</li>
+            <li>Capacitación y supervisión de pasantes en las tareas mencionadas</li>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="col" id="infoalgar">
+          <div class="titulos">
+          <p>SOPORTE TÉCNICO INFORMÁTICO Y MULTIMEDIA BACKUP</p>
+          <p>Algar Tech</p>
+          <p>11.2018 - 03.2019</p>
+          <p>Buenos Aires, Argentina</p>
+          </div>
+          <div class="descripcion">
+          <li>Reemplazo temporal del técnico efectivo por cuestiones de licencia salud, vacaciones, etc, pasando por empresas como Walmart, Omint, Sanofi, Gas Natural, entre otras.</li>
+          <li>Atención al usuario principalmente de manera remota</li>
+          <li>Gestionar todos los inconvenientes mediante sistemas de tickets</li>
+          <p></p>
+          </div>
+        </div>
+
+       <div class="col" id="infoscrap">
+        <div class="titulos">
+          <p>REPARACIÓN DE EQUIPOS CELULARES</p>
+          <p>Scrap & Rezagos</p>
+          <p>05.2019 - 11.2019</p>
+          <p>Buenos Aires, Argentina</p>
+        </div>
+        <div class="descripcion">
+          <li>Ensamblaje y reparación de equipos de telefonía celular</li>
+          <li>Atención al público al recibir y devolver los equipos</li>
+          <p></p>
+        </div>
+       </div>
+
+        <div class="col" id="infomoa">
+          <div class="titulos">
+          <p>SOPORTE TÉCNICO INFORMÁTICO Y TELEFONÍA</p>
+          <p>Marketing One Argentina</p>
+          <p>02.2020 - Actualidad</p>
+          <p>Buenos Aires, Argentina</p>
+          </div>
+          <div class="descripcion">
+          <li>Soporte técnico al Call Center: configuración del Softphone en cada usuario, monitoreo y resolución de incidentes sobre la plataforma de los llamados</li>
+          <li>Configuración de VPN y cuentas de correo en el equipo del usuario</li>
+          <li>Resolver problemas de conectividad y hardware principalmente de manera remota</li>
+         <li>Administración de cuentas de usuarios (altas, bajas, permisos)</li>
+         <p></p>
+        </div>
+        </div>
+      </div>
+
+    <div class="col hidden" id="infoestudios">
+      <div class="col" id="estudiospio">
+        <div class="titulos">
+          <p>COLEGIO SECUNDARIO PIO IX</p>
+          <P>BACHILLERATO CON ORIENTACIÓN EN INFORMÁTICA</P>
+          <P>2009 - 2013</P>
+          <P>Buenos Aires, Argentina</P>
+        </div>
+        <div class="descripcion">
+        <li>Arquitectura de equipos informáticos</li>
+        <li>Prácticas de programación en Visual Basic y C+</li>
+        <li>Conocimientos de redes informáticas y prácticas sobre las mismas</li>
+        <li>Diseño web elemental con Dreamweaver</li>
+        <li>Varias prácticas con la suite de Adobe, enfocado a Photoshop y Premiere</li>
+        </div>
+      </div>
+
+      <div class="col" id="estudiosort">
+        <div class="titulos">
+          <p>INSTITUTO TECNOLÓGICO TERCIARIO ORT</p>
+          <P>TECNICATURA SUPERIOR EN PRODUCCIÓN INTEGRAL DE SONIDO</P>
+          <P>2014 - 2016</P>
+          <P>Buenos Aires, Argentina</P>
+        </div>
+        <div class="descripcion">
+        <li>Riguroso estudio sobre la parte matemática de las señales de audio</li>
+        <li>Construcción de cables de sonido</li>
+        <li>Vincularse con herramientas de programación para la realización de instalaciones interactivas (Processing, Arduino)</li>
+        </div>
+      </div>
+
+      <div class="col" id="estudiosuna">
+        <div class="titulos">
+          <p>UNIVERSIDAD NACIONAL DE LAS ARTES</p>
+          <P>LICENCIATURA EN COMPOSICIÓN MUSICAL CON MEDIOS ELECTROACÚSTICOS</P>
+          <P>2018 - Actualidad</P>
+          <P>Buenos Aires, Argentina</P>
+        </div>
+        <div class="descripcion">
+        <li>Formación superior en el lenguaje musical</li>
+        <li>Prácticas de programación vinculando la vanguardia musical con C y C+ y lenguajes de alto nivel orientados a objetos como Max</li>
+        <li>Diseño de instrumentos virtuales mediante la programación en C</li>
+        <li>Constante exposición a tecnología de vanguardia junto al desafío de pensar cómo vincularla con la música</li>
+        </div>
+      </div>
+    </div>
+
+    <div class="col hidden" id="infoherramientas">
+      <div class="titulos">
+        <p>CONOCIMIENTOS INFORMÁTICOS</p>
+      </div>
+      <div class="descripcion">
+        <li>Armado y reparación de computadoras de escritorio y portátiles</li>
+        <li>Amplia experiencia en cableado de red y obras de cableado en general</li>
+        <li>Configuración de VPN en varios clientes</li>
+      </div>
+
+      <div class="titulos">
+        <p>SISTEMAS OPERATIVOS</p>
+      </div>
+      <div class="descripcion">
+        <li>Windows 7, 8, 10, 11, ediciones Home y Pro: Avanzado</li>
+        <li>Mac OS X, versión 10.10 en adelante: Avanzado</li>
+        <li>Ubuntu: Intermedio</li>
+      </div>
+
+      <div class="titulos">
+        <p>SOFTWARE DE ADMINISTRACIÓN</p>
+      </div>
+      <div class="descripcion">
+        <li>Paquete Office: Avanzado</li>
+        <li>Herramientas de la suite Google Drive: Avanzado</li>
+        <li>Sistemas de Tickets para el manejo de incidentes: Jira, GLPI, VTiger</li>
+      </div>
+
+      <div class="titulos">
+        <p>PROGRAMACIÓN Y RELACIONADOS</p>
+      </div>
+      <div class="descripcion">
+        <li>Automatización y webscraping con Selenium y Python: Inicial</li>
+        <li>Diseño web con HTML, CSS y JavaScript: Inicial</li>
+        <li>Lenguaje C: Básico</li>
+      </div>
+
+      <div class="titulos">
+        <p>PROGRAMAS MULTIMEDIA</p>
+      </div>
+      <div class="descripcion">
+        <li>Manejo avanzado de software de edición de audio: Reaper, Ableton, Audition, etc</li>
+        <li>Manejo intermedio de software de edición de video: Premiere, Sony Vegas, Filmora, etc</li>
+        <li>Manejo intermedio de software de edición de imagen: Photoshop, Krita, etc</li>
+      </div>
+
+      <div class="titulos">
+        <p>IDIOMAS</p>
+      </div>
+      <div class="descripcion">
+        <li>Español: Nativo</li>
+        <li>Inglés: Avanzado</li>
+        <li>Francés: Inicial</li>
+        <li>Alemán: Inicial</li>
+      </div>
+    </div>
+
+    <div class="col hidden" id="infootros">
+      <div class="titulos"><p>TÉCNICO INFORMÁTICO FREELANCE</p></div>
+      <div class="descripcion"><p>Atención particular a clientes en varias tareas informáticas tales como: backups, reinstalación de sistemas operativos, cambios de componentes, eliminación de malware y virus, etc.</p></div>
+      <div class="titulos"><p>OPERADOR DE LUCES Y SONIDO</p></div>
+      <div class="descripcion"><p>Técnico fijo en teatros y centros culturales tales como: El Emergente, Teatro El Vitral, Teatro El Bululú, entre otros, además de ser técnico eventual para otros proyectos particulares.</p></div>
+      <div class="titulos"><p>PRODUCTOR DE MÚSICA Y SONIDO FREELANCE</p></div>
+      <div class="descripcion"><p>Grabación, diseño de sonido, edición, mezcla y masterización en mi home studio y estudios externos para artistas de distintos estilos y producciones audiovisuales, trabajando para clientes de todo el país y el exterior de manera remota o presencial.</p></div>
+      <div class="titulos"><p>CLASES PARTICULARES DE MÚSICA Y PRODUCCIÓN MUSICAL</p></div>
+      <div class="descripcion"><p>De manera eventual brindo mis conocimientos de lenguaje musical y producción de música y sonido a alumnos particulares de manera presencial o en clases sincrónicas a distancia, enfocado a personas de cualquier edad aunque entre Octube de 2020 y Marzo de 2021 he trabajo en la escuela Armonía Escénica en Ramos Mejía, Buenos Aires, Argentina, dando clases orientadas a niños de entre 7 y 13 años.</p></div>
+    </div>
+
+    </div>
+    </div>
+  </div>
+<p></p>
+  <!--ACLARACIÓN: Por cuestiones de tiempo no logré hacer que el formulario sea funcional, es decir que envíe un correo. De momento solo queda mostrado y con los estilos aplicados.-->
+  <div class="contenedorform">
+    <div class="infoform">
+      <h1 class="fondodegrade">Contacto</h1>
+      <p class="hidden" id="error">Error</p>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" class="campo"></input>
+      <input type="text" id="correo" name="correo" placeholder="Ingrese su correo" class="campo"></input>
+      <textarea name="mensaje" id = "mensaje" class="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
+      <input type="submit" name="enviar" class="btnenviar" onclick="enviar()"></input>
+    </div>
+  </div>
+  <script src="function.js"></script>
+</body>
