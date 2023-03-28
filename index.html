@@ -231,15 +231,17 @@
     </div>
   </div>
 <p></p>
+  <form action="https://formsubmit.co/ba65cb8be7910747f5f136f139815936" method="POST">
   <div class="contenedorform">
     <div class="infoform">
       <h1 class="fondodegrade">Contacto</h1>
       <p class="hidden" id="error">ACLARACIÓN: Por cuestiones de tiempo no logré hacer que el formulario sea funcional, es decir que envíe un correo. De momento solo queda visible y con los estilos aplicados.</p>
-      <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" class="campo"></input>
-      <input type="text" id="correo" name="correo" placeholder="Ingrese su correo" class="campo"></input>
-      <textarea name="mensaje" id = "mensaje" class="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" class="campo" required></input>
+      <input type="email" id="correo" name="email" placeholder="Ingrese su correo" class="campo" required></input>
+      <textarea name="mensaje" id = "mensaje" class="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje..." required></textarea>
       <input type="submit" name="enviar" class="btnenviar" onclick="enviar()"></input>
     </div>
   </div>
+  </form>
   <script src="function.js"></script>
 </body>
