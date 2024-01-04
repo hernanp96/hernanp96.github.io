@@ -9,11 +9,13 @@ var a = document.getElementById("infotrabajos");
 var b = document.getElementById("infoestudios");
 var c = document.getElementById("infoherramientas");
 var d = document.getElementById("infootros");
+var e = document.getElementById("infootrosestudios");
 
 var w = document.getElementById("b1");
 var x = document.getElementById("b2");
 var y = document.getElementById("b3");
 var z = document.getElementById("b4");
+var zz = document.getElementById("b5");
 
 var menucontent = document.getElementById("menu-content");
 
@@ -111,6 +113,15 @@ function pioix(){
 
 }
 
+function otrostes() {
+  var x = document.getElementById("otros");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 ///Cambiar colores de botones
   
 // Botones columna 1
@@ -118,10 +129,11 @@ function boton1(){
 
     w.classList.add("fondoboton");
 
-    if (x.classList.contains("fondoboton") || y.classList.contains("fondoboton") || z.classList.contains("fondoboton")){
+    if (x.classList.contains("fondoboton") || y.classList.contains("fondoboton") || z.classList.contains("fondoboton") || zz.classList.contains("fondoboton")){
       x.classList.remove("fondoboton");
       y.classList.remove("fondoboton");
       z.classList.remove("fondoboton");
+      zz.classList.remove("fondoboton");
     }
 
     if (a.classList.contains("hidden")){
@@ -129,16 +141,18 @@ function boton1(){
       b.classList.add("hidden");
       c.classList.add("hidden");
       d.classList.add("hidden");
+      e.classList.add("hidden");
     }
 }
 
 function boton2(){
   x.classList.add("fondoboton");
 
-  if (w.classList.contains("fondoboton") || y.classList.contains("fondoboton") || z.classList.contains("fondoboton")){
+  if (w.classList.contains("fondoboton") || y.classList.contains("fondoboton") || z.classList.contains("fondoboton") || zz.classList.contains("fondoboton")){
     w.classList.remove("fondoboton");
     y.classList.remove("fondoboton");
     z.classList.remove("fondoboton");
+    zz.classList.remove("fondoboton");
   }
 
   if (b.classList.contains("hidden")){
@@ -146,16 +160,18 @@ function boton2(){
     a.classList.add("hidden");
     c.classList.add("hidden");
     d.classList.add("hidden");
+    e.classList.add("hidden");
   }
 }
 
 function boton3(){
   y.classList.add("fondoboton");
 
-  if (w.classList.contains("fondoboton") || x.classList.contains("fondoboton") || z.classList.contains("fondoboton")){
+  if (w.classList.contains("fondoboton") || x.classList.contains("fondoboton") || z.classList.contains("fondoboton") || zz.classList.contains("fondoboton")){
     w.classList.remove("fondoboton");
     x.classList.remove("fondoboton");
     z.classList.remove("fondoboton");
+    zz.classList.remove("fondoboton");
   }
 
   if (c.classList.contains("hidden")){
@@ -163,20 +179,41 @@ function boton3(){
     a.classList.add("hidden");
     b.classList.add("hidden");
     d.classList.add("hidden");
+    e.classList.add("hidden");
   }
 }
 
 function boton4(){
   z.classList.add("fondoboton");
 
-  if (w.classList.contains("fondoboton") || y.classList.contains("fondoboton") || z.classList.contains("fondoboton")){
+  if (w.classList.contains("fondoboton") || y.classList.contains("fondoboton") || z.classList.contains("fondoboton") || zz.classList.contains("fondoboton")){
     w.classList.remove("fondoboton");
     y.classList.remove("fondoboton");
     x.classList.remove("fondoboton");
+    zz.classList.remove("fondoboton");
   }
 
   if (d.classList.contains("hidden")){
     d.classList.remove("hidden");
+    a.classList.add("hidden");
+    b.classList.add("hidden");
+    c.classList.add("hidden");
+    e.classList.add("hidden");
+  }
+}
+
+function boton5(){
+  zz.classList.add("fondoboton");
+  if (w.classList.contains("fondoboton") || x.classList.contains("fondoboton") || y.classList.contains("fondoboton") || z.classList.contains("fondoboton")){
+    w.classList.remove("fondoboton");
+    y.classList.remove("fondoboton");
+    x.classList.remove("fondoboton");
+    z.classList.remove("fondoboton");
+  }
+  
+  if (e.classList.contains("hidden")){
+    e.classList.remove("hidden");
+    d.classList.add("hidden");
     a.classList.add("hidden");
     b.classList.add("hidden");
     c.classList.add("hidden");
